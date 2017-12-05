@@ -43,3 +43,6 @@ index.android.bundle.meta
 index.ios.bundle
 index.ios.bundle.map
 index.ios.bundle.meta
+
+# vsCode
+.vscode/
