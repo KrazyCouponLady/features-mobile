@@ -4,7 +4,16 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"prettier": "prettier --no-semi --write app/**/*.js *.js",
+		"android": "react-native run-android --appIdSuffix  debug",
+		"ios": "react-native run-ios"		
+	},
+	"lint-staged": {
+		"{*.js,app/**/*.js}": [
+		  "prettier --no-semi --write",
+		  "eslint -c .eslintrc.hook --fix"
+		]
 	},
 	"dependencies": {
 		"react": "16.0.0",
@@ -12,9 +21,25 @@
 		"react-native-shared-preferences": "^1.0.0"
 	},
 	"devDependencies": {
+		"babel-eslint": "^8.0.2",
 		"babel-jest": "21.2.0",
+		"babel-preset-flow": "^6.23.0",
 		"babel-preset-react-native": "4.0.0",
-		"jest": "21.2.1",
+		"eslint": "^4.12.1",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-config-standard-react": "^5.0.0",
+		"eslint-plugin-flowtype": "^2.39.1",
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-node": "^5.2.0",
+		"eslint-plugin-promise": "^3.6.0",
+		"eslint-plugin-react": "^7.4.0",
+		"eslint-plugin-standard": "^3.0.1",
+		"flow": "^0.2.3",
+		"flow-bin": "^0.59.0",
+		"husky": "^0.14.3",
+		"jest": "^21.2.1",
+		"lint-staged": "^5.0.0",
+		"prettier": "^1.8.2",
 		"react-test-renderer": "16.0.0"
 	},
 	"jest": {

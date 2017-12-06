@@ -1,4 +1,4 @@
-import App from './app/index';
+import App from "./app/index"
 
 // AppRegistry.registerComponent('featuresmobile', () => App);
 App.start()
