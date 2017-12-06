@@ -1,9 +1,15 @@
-import React, { Component } from "react"
-import { Alert, AppRegistry, View } from "react-native"
+import React, { Component } from 'react'
+import { AppRegistry, View } from 'react-native'
 
 class Root extends Component {
-  render() {
-    const App = require("./App").default
+
+  constructor (props) {
+    super(props)
+    this.state = {prefs: 'true'}
+  }
+
+  render () {
+    const App = require('./App').default
     return (
       <View style={{ flex: 1 }}>
         <App />
@@ -12,9 +18,9 @@ class Root extends Component {
   }
 }
 
-function start() {
+function start () {
   let featuresmobile = () => <Root />
-  AppRegistry.registerComponent("featuresmobile", () => featuresmobile)
+  AppRegistry.registerComponent('featuresmobile', () => featuresmobile)
 }
 
 export default {

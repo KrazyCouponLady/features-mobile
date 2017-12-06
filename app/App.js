@@ -1,29 +1,19 @@
 import React, { Component } from "react"
 import {
-  Platform,
   StyleSheet,
   Text,
   View,
   TouchableWithoutFeedback
 } from "react-native"
 
-import RNSharedPreferences from "react-native-shared-preferences"
-
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-})
+import PreferenceInput from "./actions/PrefenceInput"
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Features Mobile</Text>
-        {/* <TouchableWithoutFeedback>
-          
-        </TouchableWithoutFeedback> */}
+        <PreferenceInput/>
       </View>
     )
   }

@@ -6,7 +6,7 @@
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
 		"prettier": "prettier --no-semi --write app/**/*.js *.js",
-		"android": "react-native run-android --appIdSuffix  debug",
+		"android": "react-native run-android",
 		"ios": "react-native run-ios"		
 	},
 	"lint-staged": {
