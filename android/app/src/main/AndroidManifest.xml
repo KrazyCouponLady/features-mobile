@@ -2,8 +2,8 @@
     package="com.featuresmobile"
     android:versionCode="1"
     android:versionName="1.0"
-    android:sharedUserId="android.uid.shared"
-    android:sharedUserLabel="kcl" >
+    android:sharedUserId="@string/user_label"
+    android:sharedUserLabel="@string/user_label">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>

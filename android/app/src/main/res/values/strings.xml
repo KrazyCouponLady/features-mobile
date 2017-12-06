@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Features Mobile</string>
+    <string name="user_label">kcl.shared.id</string>
 </resources>
