@@ -7,18 +7,17 @@
 		"test": "jest",
 		"prettier": "prettier --no-semi --write app/**/*.js *.js",
 		"android": "react-native run-android",
-		"ios": "react-native run-ios"		
+		"ios": "react-native run-ios"
 	},
 	"lint-staged": {
 		"{*.js,app/**/*.js}": [
-		  "prettier --no-semi --write",
-		  "eslint -c .eslintrc.hook --fix"
+			"prettier --no-semi --write",
+			"eslint -c .eslintrc.hook --fix"
 		]
 	},
 	"dependencies": {
 		"react": "16.0.0",
-		"react-native": "0.50.4",
-		"react-native-shared-preferences": "^1.0.0"
+		"react-native": "0.50.4"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.0.2",

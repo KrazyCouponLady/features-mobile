@@ -19,12 +19,12 @@ export default class PreferenceInput extends Component {
         'Value of sharedPref: testValue',
         value,
         [
-          {text: 'OK', onPress: () => { console.log('OK Pressed') }}
+          {text: 'OK', onPress: () => { console.log(value) }}
         ]
       )
     })
   }
-
+ 
 
   render () {
     return (
