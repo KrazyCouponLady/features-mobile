@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, TextInput, Button, Alert } from 'react-native'
 
-import SharedPreferences from 'react-native-shared-preferences'
+import SharedPreferences from 'react-native-shared-prefs'
 
 export default class PreferenceInput extends Component {
   constructor (props) {
@@ -10,11 +10,11 @@ export default class PreferenceInput extends Component {
   }
 
   onSavePress = () => {
-    SharedPreferences.setItem('testValue', this.state.text)
+    SharedPreferences.setSharedPreference('testValue', this.state.text)
   }
 
   onShowPress = () => {
-    SharedPreferences.getItem('testValue', (value) => {
+    SharedPreferences.getSharedPreference('testValue', (value) => {
       Alert.alert(
         'Value of sharedPref: testValue',
         value,
